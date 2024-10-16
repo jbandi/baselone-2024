@@ -1,0 +1,14 @@
+---
+interface Props {
+    delay: number;
+}
+const { delay } = Astro.props;
+console.log(`Rendering Content Component ... (delay: ${delay}ms)`);
+
+const timestamp = new Date().toLocaleTimeString();
+---
+<div>
+    <h2>Content: {timestamp}</h2>
+    <div>This is static content ...</div>
+
+</div>
