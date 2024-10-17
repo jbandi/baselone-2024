@@ -1,0 +1,7 @@
+/Users/jbandi/Dev/MyBitbucket/webdev-mf/99-playground/CounterApp/bin/net8.0/publish/CounterApp
+/Users/jbandi/Dev/MyBitbucket/webdev-mf/99-playground/CounterApp/bin/net8.0/publish/appsettings.Development.json
+/Users/jbandi/Dev/MyBitbucket/webdev-mf/99-playground/CounterApp/bin/net8.0/publish/appsettings.json
+/Users/jbandi/Dev/MyBitbucket/webdev-mf/99-playground/CounterApp/bin/net8.0/publish/CounterApp.dll
+/Users/jbandi/Dev/MyBitbucket/webdev-mf/99-playground/CounterApp/bin/net8.0/publish/CounterApp.deps.json
+/Users/jbandi/Dev/MyBitbucket/webdev-mf/99-playground/CounterApp/bin/net8.0/publish/CounterApp.runtimeconfig.json
+/Users/jbandi/Dev/MyBitbucket/webdev-mf/99-playground/CounterApp/bin/net8.0/publish/CounterApp.pdb
