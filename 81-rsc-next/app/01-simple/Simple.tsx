@@ -1,6 +1,6 @@
 export function Simple() {
   let now = new Date().toLocaleTimeString();
-  console.log("rendering Simple");
+  console.log("Rendering Simple Component");
   return (
     <div>
       <h1>Simple Component</h1>

@@ -14,18 +14,18 @@ import styles from "./Container.module.css";
 export default async function Container() {
   const dataFromDb = await loadCountFromDb();
 
-  async function updateCount() {
-    "use server";
-    console.log("updating count ...");
-  }
-  
   // async function updateCount() {
   //   "use server";
   //   console.log("updating count ...");
-  //   await updateCountInDb(dataFromDb + 1); // 🤯🤯🤯 we can use `dataFromDb` in a method that is called from the client ...
-  //   revalidatePath("/");
-  //   // redirect("/");
   // }
+  
+  async function updateCount() {
+    "use server";
+    console.log("updating count ...");
+    await updateCountInDb(dataFromDb + 1); // 🤯🤯🤯 we can use `dataFromDb` in a method that is called from the client ...
+    revalidatePath("/");
+    // redirect("/");
+  }
 
   console.log("rendering Container");
   return (
@@ -44,7 +44,7 @@ export default async function Container() {
       {/*  />*/}
       {/*  <button type="submit">Update</button>*/}
       {/*</form>*/}
-      {/*<Child />*/}
+      {/*<Child updateFn={updateCount} />*/}
     </div>
   );
 }

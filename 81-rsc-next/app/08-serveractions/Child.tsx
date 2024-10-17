@@ -2,11 +2,12 @@
 
 import { updateCountServerWithValue } from "./serverData";
 import styles from "./Child.module.css";
-// type ChildProps = { updateFn: () => Promise<void> };
+type ChildProps = { updateFn: () => Promise<void> };
 
-export default function Child() {
+export default function Child({updateFn}: ChildProps) {
   async function handleClick() {
     console.log("handling click ...");
+    updateFn();
   }
 
   console.log("rendering Child");
