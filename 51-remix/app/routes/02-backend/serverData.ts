@@ -3,7 +3,7 @@ import { DATA_PATH, getCount, getData, updateCount } from "~/db/db";
 
 export async function readServerData() {
   // read data from database
-  const serverData = await getCount();
+  const serverData = await getData();
 
   // // random delay
   // const delay = (Math.floor(Math.random() * 3) + 2) * 1000;

@@ -5,7 +5,8 @@ import { Container } from "./Container";
 
 export async function loader() {
   const serverData = await readServerData();
-  console.log("Loading data on the server:", serverData);
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  console.log("Loaded data on the server:", serverData);
   return json({
     serverData,
   });
