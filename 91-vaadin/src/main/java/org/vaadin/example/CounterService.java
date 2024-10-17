@@ -1,7 +1,9 @@
 package org.vaadin.example;
 
 import java.io.Serializable;
+import java.util.concurrent.CompletableFuture;
 
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -23,5 +25,16 @@ public class CounterService implements Serializable {
 
     public void increase() {
         count++;
+    }    
+    
+    @Async
+    public CompletableFuture increaseAsync() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        count++;
+        return CompletableFuture.completedFuture(null);
     }
 }
