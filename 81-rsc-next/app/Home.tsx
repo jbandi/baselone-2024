@@ -3,7 +3,7 @@ export function Home() {
   console.log("rendering Home");
   return (
     <div>
-      <h1>React Server</h1>
+      <h1>React Server Components</h1>
       <p>{now}</p>
     </div>
   );
