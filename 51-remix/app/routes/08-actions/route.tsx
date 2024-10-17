@@ -19,6 +19,7 @@ export async function action({ request }: ActionFunctionArgs) {
   await writeServerData(count);
   return json({ action: "Action on the server" });
 }
+
 export default function BackendPage() {
   const { serverData } = useLoaderData<typeof loader>();
   // const fetcher = useFetcher();
