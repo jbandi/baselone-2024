@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
 export default function Counter() {
+  console.log("rendering Counter");
   const [count, setCount] = useState(0);
 
   function handleClick() {

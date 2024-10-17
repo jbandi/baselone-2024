@@ -4,7 +4,9 @@ interface Props {
 }
 const { delay } = Astro.props;
 console.log(`Rendering Slow Component ... (delay: ${delay}ms)`);
-await new Promise((resolve) => setTimeout(resolve, delay));
+await new Promise(
+  (resolve) => setTimeout(resolve, delay)
+);
 const timestamp = new Date().toLocaleTimeString();
 ---
 <div>
