@@ -36,6 +36,6 @@ export class HomeScreenComponent {
   }
 
   debug() {
-    console.log('Rendering DataScreen');
+    console.log('Rendering HomeScreen');
   }
 }
