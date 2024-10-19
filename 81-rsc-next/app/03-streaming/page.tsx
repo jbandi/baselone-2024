@@ -2,6 +2,8 @@ import { Suspense } from "react";
 import { Backend } from "./Backend";
 import { Spinner } from "@/app/Spinner";
 
+export const dynamic = 'force-dynamic';
+
 export default function BackendPage() {
   return (
     <>

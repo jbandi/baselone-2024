@@ -1,6 +1,7 @@
 "use client";
+import { useActionState } from "react";
 
-import {useFormState, useFormStatus} from 'react-dom';
+import { useFormStatus } from 'react-dom';
 import styles from "./Child.module.css";
 import {updateCountServerState} from '@/app/09-form-hooks/serverAction';
 
@@ -12,7 +13,7 @@ type ChildProps = {
 
 export default function Child({initialState}: ChildProps  ) {
 
-  const [state, formAction] = useFormState(updateCountServerState, '');
+  const [state, formAction] = useActionState(updateCountServerState, '');
 
   console.log("rendering Child", state);
   return (
